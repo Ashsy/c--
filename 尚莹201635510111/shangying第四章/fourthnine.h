@@ -1,0 +1,39 @@
+#include<stdio.h>
+int main()
+{
+	long i,a,b,c,d,e;
+	scanf("%ld",&i);
+	if(1<=i&&i<100)
+	{
+		a=i/10;
+		b=i%10;
+		printf("2位数,%ld,%ld,%ld%ld\n",a,b,b,a);
+	}
+	if(100<=i&&i<1000)
+	{
+		a=i/100;
+		b=i/10-i/100*10;
+		c=i%10;
+		printf("3位数，%ld,%ld,%ld,%ld%ld%ld\n",a,b,c,c,b,a);
+	}
+	if(1000<=i&&i<10000)
+	{
+		a=i/1000;
+		b=i/100-i/1000*10;
+		c=i/10-i/100*10;
+		d=i%10;
+		printf("4位数，%ld,%ld,%ld,%ld,%ld%ld%ld%ld\n",a,b,c,d,d,c,b,a);
+	}
+	if("10000<=i&&i<100000)
+	{
+		a=i/1000;
+		b=i/1000-i/10000*10;
+		c=i/100-i/1000*10;
+		d=i/10-i/100*10;
+		e=i%10;
+		printf("5位数,%ld,%ld,%ld,%ld,%ld,%ld%ld%ld%ld%ld\n",a,b,c,d,e,e,d,c,b,a);
+	}
+		return 0;
+}
+}
+}
